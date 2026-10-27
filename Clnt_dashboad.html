@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Customer Dashboard | e-Tailor</title>
+  <link rel="stylesheet" href="Clnt_dashboad.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- TOP NAVBAR -->
+<header class="topbar">
+  <div class="brand">
+    <img src="assets/logo2.png" alt="logo">
+    <span>e-Tailor</span>
+  </div>
+
+  <div class="user">
+    <img src="assets/user_icon.avif" alt="user">
+    <span id="userName">Customer</span>
+    <button onclick="logout()">Logout</button>
+  </div>
+</header>
+
+<!-- MAIN LAYOUT -->
+<div class="layout">
+
+  <!-- SIDEBAR -->
+<aside class="sidebar">
+  <ul>
+    <li class="active">
+      <a href="Clnt_dashboad.html">🏠 <span>Dashboard</span></a>
+    </li>
+    <li>
+      <a href="measurements.html">📐 <span>My Measurements</span></a>
+    </li>
+    <li>
+      <a href="new_order.html">🧵 <span>New Stitch Order</span></a>
+    </li>
+    <li>
+      <a href="orders.html">📦 <span>My Orders</span></a>
+    </li>
+    <li>
+      <a href="vr_tryon.html">🤖 <span>VR Try-On</span></a>
+    </li>
+    <li>
+      <a href="payments.html">💳 <span>Payments</span></a>
+    </li>
+    <li>
+      <a href="profile.html">⚙️ <span>Profile</span></a>
+    </li>
+  </ul>
+</aside>
+
+
+
+
+  <!-- CONTENT -->
+  <main class="content">
+
+    <h2 class="page-title">Dashboard Overview</h2>
+
+    <!-- STATS -->
+    <div class="stats">
+      <div class="stat-card">
+        <span>Total Orders</span>
+        <h3>12</h3>
+      </div>
+      <div class="stat-card">
+        <span>Active Orders</span>
+        <h3>3</h3>
+      </div>
+      <div class="stat-card">
+        <span>Completed</span>
+        <h3>9</h3>
+      </div>
+      <div class="stat-card">
+        <span>Measurements Saved</span>
+        <h3>Yes</h3>
+      </div>
+    </div>
+
+    <h2 class="section-title">Recent Orders</h2>
+
+    <div class="table-card">
+      <table>
+        <tr>
+          <th>Order ID</th>
+          <th>Cloth</th>
+          <th>Status</th>
+          <th>Delivery</th>
+          <th>Action</th>
+        </tr>
+
+        <tr>
+          <td>#ET101</td>
+          <td>Formal Shirt</td>
+          <td><span class="status stitching">Stitching</span></td>
+          <td>22 Jan</td>
+          <td>
+           <a href="view-order.html?orderId=ET101" class="view-btn btn btn-warning">
+    View
+  </a>
+  </td>
+        </tr>
+
+        <tr>
+          <td>#ET102</td>
+          <td>Kurta</td>
+          <td><span class="status delivered">Delivered</span></td>
+          <td>15 Jan</td>
+          <td>
+           <a href="view-order.html?orderId=ET102" class="view-btn btn btn-warning">
+    View
+  </a>
+  </td>
+        </tr>
+      </table>
+    </div>
+
+  </main>
+</div>
+
+<script src="Clnt_dashboad.js"></script>
+
+</body>
+</html>
